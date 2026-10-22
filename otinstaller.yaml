@@ -21,7 +21,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/indicator-intelligence@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/indicator-intelligence@sha256:5ba305920f4dce5c8389bb9e044344f3f97daa832eac102164da8c1f554559fb
   platforms: [linux/amd64, linux/arm64]
   command: ["python", "/opt/tool/indicator/indicator.py", "--domains", "{domain}"]
   output_format: text
